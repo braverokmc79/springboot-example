@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.model.dao.mapper.KeywordMapper">
+ 
+    <resultMap id="keywordMAP"  type="com.example.model.vo.KeywordVO">
+       <result property="keywordNo" column="keyword_no"/>
+       <result property="userId" column="user_id"/>
+       <result property="type" column="type"/>      
+       <result property="keyword1" column="keyword_1"/>
+	   <result property="keyword2" column="keyword_2"/>
+	   <result property="keyword3" column="keyword_3"/>
+	   <result property="keyword4" column="keyword_4"/>
+	   <result property="keyword5" column="keyword_5"/>
+	   <result property="keyword6" column="keyword_6"/>
+	   <result property="keyword7" column="keyword_7"/>
+	   <result property="keyword8" column="keyword_8"/>
+	   <result property="keyword9" column="keyword_9"/>
+	   <result property="keyword10" column="keyword_10"/>
+	   <result property="keyword11" column="keyword_11"/>
+	   <result property="keyword12" column="keyword_12"/>
+	   <result property="keyword13" column="keyword_13"/>
+	   <result property="keyword14" column="keyword_14"/>
+	   <result property="keyword15" column="keyword_15"/>
+	   <result property="keyword16" column="keyword_16"/>
+	   <result property="keyword17" column="keyword_17"/>
+	   <result property="keyword18" column="keyword_18"/>
+	   <result property="keyword19" column="keyword_19"/>
+	   <result property="keyword20" column="keyword_20"/>
+	   <result property="keyword21" column="keyword_21"/>
+	   <result property="keyword22" column="keyword_22"/>
+	   <result property="keyword23" column="keyword_23"/>
+	   <result property="keyword24" column="keyword_24"/>
+	   <result property="keyword25" column="keyword_25"/>
+
+    </resultMap>
+
+	 
+	 <select id="keywordGet"  resultMap="keywordMAP">
+	  	select * from keyword where user_id=#{userId} and type=#{type}
+	 </select>
+	
+	
+	<insert id="keywordCreate" >
+	 <![CDATA[  
+						insert into keyword   (
+				   keyword_no
+				  ,user_id
+				  ,type
+				  ,keyword_1
+				  ,keyword_2
+				  ,keyword_3
+				  ,keyword_4
+				  ,keyword_5
+				  ,keyword_6
+				  ,keyword_7
+				  ,keyword_8
+				  ,keyword_9
+				  ,keyword_10
+				  ,keyword_11
+				  ,keyword_12
+				  ,keyword_13
+				  ,keyword_14
+				  ,keyword_15
+				  ,keyword_16
+				  ,keyword_17
+				  ,keyword_18
+				  ,keyword_19
+				  ,keyword_20
+				  ,keyword_21
+				  ,keyword_22
+				  ,keyword_23
+				  ,keyword_24
+				  ,keyword_25
+				) VALUES (
+				   NULL -- keyword_no - IN int(11)
+				  ,#{userId}  -- user_id - IN varchar(20)
+				  ,#{type}  -- type - IN varchar(10)
+				  ,#{keyword1}  -- keyword_1 - IN varchar(500)
+				  ,#{keyword2}  -- keyword_2 - IN varchar(500)
+				  ,#{keyword3}  -- keyword_3 - IN varchar(500)
+				  ,#{keyword4}  -- keyword_4 - IN varchar(500)
+				  ,#{keyword5}  -- keyword_5 - IN varchar(500)
+				  ,#{keyword6}  -- keyword_6 - IN varchar(500)
+				  ,#{keyword7}  -- keyword_7 - IN varchar(500)
+				  ,#{keyword8}  -- keyword_8 - IN varchar(500)
+				  ,#{keyword9}  -- keyword_9 - IN varchar(500)
+				  ,#{keyword10}  -- keyword_10 - IN varchar(500)
+				  ,#{keyword11}  -- keyword_11 - IN varchar(500)
+				  ,#{keyword12}  -- keyword_12 - IN varchar(500)
+				  ,#{keyword13}  -- keyword_13 - IN varchar(500)
+				  ,#{keyword14}  -- keyword_14 - IN varchar(500)
+				  ,#{keyword15}  -- keyword_15 - IN varchar(500)
+				  ,#{keyword16}  -- keyword_16 - IN varchar(500)
+				  ,#{keyword17} -- keyword_17 - IN varchar(500)
+				  ,#{keyword18}  -- keyword_18 - IN varchar(500)
+				  ,#{keyword19}  -- keyword_19 - IN varchar(500)
+				  ,#{keyword20}  -- keyword_20 - IN varchar(500)
+				  ,#{keyword21}  -- keyword_21 - IN varchar(500)
+				  ,#{keyword22}  -- keyword_22 - IN varchar(500)
+				  ,#{keyword23}  -- keyword_23 - IN varchar(500)
+				  ,#{keyword24}  -- keyword_24 - IN varchar(500)
+				  ,#{keyword25}  -- keyword_25 - IN varchar(500)
+				)
+			]]>
+	</insert>
+	
+	
+	<update id="kewordUpdate" >
+	  <![CDATA[  
+		update keyword  SET
+
+		   keyword_1 = #{keyword1} -- varchar(500)
+		  ,keyword_2 = #{keyword2} -- varchar(500)
+		  ,keyword_3 = #{keyword3} -- varchar(500)
+		  ,keyword_4 = #{keyword4} -- varchar(500)
+		  ,keyword_5 = #{keyword5} -- varchar(500)
+		  ,keyword_6 = #{keyword6} -- varchar(500)
+		  ,keyword_7 = #{keyword7} -- varchar(500)
+		  ,keyword_8 = #{keyword8} -- varchar(500)
+		  ,keyword_9 = #{keyword9} -- varchar(500)
+		  ,keyword_10 = #{keyword10} -- varchar(500)
+		  ,keyword_11 = #{keyword11} -- varchar(500)
+		  ,keyword_12 = #{keyword12} -- varchar(500)
+		  ,keyword_13 = #{keyword13} -- varchar(500)
+		  ,keyword_14 = #{keyword14} -- varchar(500)
+		  ,keyword_15 = #{keyword15} -- varchar(500)
+		  ,keyword_16 = #{keyword16}-- varchar(500)
+		  ,keyword_17 = #{keyword17}-- varchar(500)
+		  ,keyword_18 = #{keyword18} -- varchar(500)
+		  ,keyword_19 = #{keyword19} -- varchar(500)
+		  ,keyword_20 = #{keyword20} -- varchar(500)
+		  ,keyword_21 =#{keyword21}-- varchar(500)
+		  ,keyword_22 = #{keyword22} -- varchar(500)
+		  ,keyword_23 = #{keyword23} -- varchar(500)
+		  ,keyword_24 = #{keyword24} -- varchar(500)
+		  ,keyword_25 = #{keyword25} -- varchar(500)
+		WHERE user_id = #{userId}  and type=#{type}
+
+	  	
+	  	]]>
+	</update>
+
+
+
+
+
+
+
+</mapper>
+
+

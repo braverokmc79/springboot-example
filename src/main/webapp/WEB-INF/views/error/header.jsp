@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
-    <title>Macaronics</title>
+    <title></title>
     <meta charset="utf-8">
     <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

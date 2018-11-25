@@ -26,6 +26,6 @@
         </div>
 
 
- 	<c:import url="../include/footer.jsp"/>
+ 	
 </body>
 </html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.model.dao.mapper.ListeningtestMapper">
+ 
+    <resultMap id="listeningMAP"  type="com.example.model.vo.ListeningtestVO">
+       <result property="eno" column="eno"/>
+       <result property="from" column="from"/>
+       <result property="to" column="to"/>
+       <result property="sub" column="sub"/>
+       <result property="body" column="body"/>
+       <result property="date" column="inbox_date"/>
+    </resultMap>
+
+	 
+	 <select id="listeningGet"  resultMap="listeningMAP">
+	  	select * from listeningtest where eno=#{eno}
+	 </select>
+	
+	
+	 <select id="listeningGetList" resultMap="listeningMAP">
+	  	select * from listeningtest order by eno desc
+	 </select>
+	
+	
+	<insert id="listeningCreate" >
+	 <![CDATA[  
+		insert into listeningtest 
+			      (eno,`from` ,`to`, sub, body , inbox_date
+		) VALUES ( NULL , #{from},  #{to} , #{sub} , #{body} , now() )
+			]]>
+	</insert>
+	
+	
+	<update id="listeningUpdate" >
+	  <![CDATA[  
+	  update listeningtest SET	  `from`=#{from}  ,`to` = #{to}		 
+	  	,sub =  #{sub}	 ,body = #{body} WHERE eno = #{eno}
+	  	
+	  	]]>
+	</update>
+
+	<delete id="memberDelete">
+		delete from listeningtest where eno=#{eno}
+	</delete>
+
+
+
+	<select id="checkCount" resultMap="listeningMAP">	
+	 select count(*) as aCount from listeningtest where `check`='no' and `to`=#{email}
+	</select>
+
+
+	
+	<select id="listeningCheckList" resultMap="listeningMAP">
+	select *  from listeningtest where `check`='no' and `to`=#{email}
+	</select>
+
+
+
+
+
+</mapper>
+
+

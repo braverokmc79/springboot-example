@@ -162,6 +162,10 @@
         </dependency>
 
 
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-webmvc-portlet</artifactId>
+        </dependency>
 	</dependencies>
 
 	<!-- 컨테이너의 재시작없이 Java 클래스를 자동 로드하기 - loaded https://www.holaxprogramming.com/2015/05/29/spring-boot-and-loaded/ -->

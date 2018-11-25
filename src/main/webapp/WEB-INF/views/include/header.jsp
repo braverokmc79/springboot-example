@@ -1,21 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">	
-	<!-- Favicons 부트스트랩 아이콘 샘플 -->
-<!-- 	<link rel="apple-touch-icon" href="http://bootstrapk.com/apple-touch-icon.png">
-	<link rel="icon" href="http://bootstrapk.com/apple-touch-icon.png">
- -->	   
-    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-    <title>샘플</title>
-    <!-- 부트스트랩 -->
-   <!-- 합쳐지고 최소화된 최신 CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<!-- 부가적인 테마 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
-    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>메시지 중계시스템</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+<link href="/resources/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/resources/css/font-awesome.css" rel="stylesheet">
+<link href="/resources/css/style.css" rel="stylesheet">
+<link href="/resources/css/dashboard.css" rel="stylesheet">
+<link href="/resources/css/signin.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.error{
+	color:red;
+}
+
+.dropdown-menu li {
+	width:220px;
+	height:50px;
+	vertical-align: middle;
+	display: table-cell;
+}
+.dropdown-menu li a{
+	width:220px;
+	height:40px; 
+    font-weight: bold; 
+    text-align: center;
+       
+}
+.subnavbar .dropdown .dropdown-menu a {
+    font-size: 18px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.socre-number{
+	width: 100px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;   
+}
+</style>    
+	
