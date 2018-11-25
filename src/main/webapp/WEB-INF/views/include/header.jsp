@@ -14,37 +14,3 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<style>
-.error{
-	color:red;
-}
-
-.dropdown-menu li {
-	width:220px;
-	height:50px;
-	vertical-align: middle;
-	display: table-cell;
-}
-.dropdown-menu li a{
-	width:220px;
-	height:40px; 
-    font-weight: bold; 
-    text-align: center;
-       
-}
-.subnavbar .dropdown .dropdown-menu a {
-    font-size: 18px;
-    vertical-align: middle;
-    display: table-cell;
-}
-.socre-number{
-	width: 100px;
-}
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:70px;   
-}
-</style>    
-	

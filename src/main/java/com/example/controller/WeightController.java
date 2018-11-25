@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.model.vo.KeywordVO;
 import com.example.model.vo.ScoreVO;
 import com.example.model.vo.UserVO;
-import com.example.service.KeywordService;
 import com.example.service.ScoreService;
 
 @Controller

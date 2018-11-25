@@ -15,8 +15,7 @@
 	
 	<div class="content clearfix">
 		
-		<form:form action="/join" method="post"  commandName="userVO">
-		
+		<form:form action="/join" method="post"  commandName="userVO">		
 			<h1>회원 가입</h1>			
 			
 			<div class="login-fields">			

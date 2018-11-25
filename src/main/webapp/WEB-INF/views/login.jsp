@@ -7,10 +7,6 @@
 <html lang="ko">
 <head>
 <c:import url="include/header.jsp"/>
-<style type="text/css">
- .username-field { background: url(/resources/images/user.png) no-repeat; }
-.password-field { background: url(/resources/images/password.png) no-repeat; }
-</style>
 </head>
 <body>
 <c:import url="include/top.jsp"/>
@@ -84,25 +80,6 @@
 <div id="footer">
 <c:import url="include/footer.jsp"/>
 </div>
-
-<script>
-$(document).ready(function(){
-	
-	$("#id").on("click", function(){		
-		$("#id").css("background", "url(/resources/images/user.png) no-repeat;");
-	});
-	
-	$("#id").on("mouseout", function(){
-		
-		$("#id").css("background", "url(/resources/images/user.png) no-repeat;");
-	});
-	
-	$("#pw").on("click", function(){		
-		$("#pw").css("background", "url(/resources/images/password.png) no-repeat;");
-	});
-});
-
-</script>
 
 </body>
 </html>

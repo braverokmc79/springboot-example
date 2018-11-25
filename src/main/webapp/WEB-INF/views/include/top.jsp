@@ -13,8 +13,7 @@
 				<div class="nav-collapse">
 	
 
-	<ul class="nav pull-right">
-	
+	<ul class="nav pull-right">	
 	  <c:choose>
 	  	 <c:when test="${ not empty USER }">
 	  	 	<li><a	href="mailto:${USER.email }"><i

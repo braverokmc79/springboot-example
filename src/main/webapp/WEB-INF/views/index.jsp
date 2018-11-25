@@ -9,8 +9,7 @@
 <body>
 <c:import url="include/top.jsp"/>
 <c:import url="include/topMenu.jsp"/>
-	
-	
+		
 	<!-- /subnavbar -->
 	<div class="main">
 		<div class="main-inner">
@@ -50,8 +49,7 @@
 		</div>
 		<!-- /main-inner -->
 	</div>
-	
-	
+		
 
 <c:import url="include/footer.jsp"/>
 

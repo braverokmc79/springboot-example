@@ -9,21 +9,11 @@
 <html lang="ko">
 <head>
 <c:import url="include/header.jsp"/>
-<style type="text/css">
-pre{
-	
-	border:0px solid #f5f5f5;
-	background-color: rgba(255, 255, 255, 0.01);
-	
-	
 
-}
-</style>
- 
  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
    <!-- MDBootstrap Datatables  -->
-<link href="/resources/css2/addons/datatables.min.css" rel="stylesheet"> 
+<link href="/resources/css/datatables.min.css" rel="stylesheet"> 
 </head>
 <body>
 <c:import url="include/top.jsp"/>
@@ -31,10 +21,7 @@ pre{
 	<!-- /subnavbar -->
 	<div class="main">
 		<div class="main-inner">
-	
-	
-	
-	
+
 		
 			<div class="container">
 		
@@ -133,9 +120,9 @@ pre{
 
  
    <!-- MDB core JavaScript -->
-<script type="text/javascript" src="/resources/js2/mdb.min.js"></script>
+<script type="text/javascript" src="/resources/js/mdb.min.js"></script>
    <!-- MDBootstrap Datatables  -->
-<script type="text/javascript" src="/resources/js2/addons/datatables.js"></script>
+<script type="text/javascript" src="/resources/js/datatables.js"></script>
 <script>
 $(document).ready(function () {
   $('#dtBasicExample').DataTable();

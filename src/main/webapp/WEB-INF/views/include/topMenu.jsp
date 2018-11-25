@@ -51,21 +51,7 @@
 							<li><a href="/users/message/all">전체</a>
 							</li>															
 						</ul>
-					</li>				
-				
-			
-<%-- 					<li class="dropdown subnavbar-open-right <c:if test="${fn:contains(URL, 'listeningtest')}" >active</c:if>" style="width:200px;">
-						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-list-alt"></i><span>리스닝 테스트</span> <b
-							class="caret"></b>
-					    </a>
-					<ul class="dropdown-menu">
-							<li><a
-								href="/users/listeningtest/list">목록</a>
-							</li>																	
-						</ul>					    
-					</li>	 --%>					
-					
+					</li>								
 					
 				</ul>
 			</div>
